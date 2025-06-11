@@ -1,21 +1,14 @@
 import "./App.css";
 
 import Nav from "./navigation/Nav";
+import Products from "./products/Products";
 
 function App() {
   return (
-    <div>
-      {/* <Card /> */}
-      {/* <Input /> */}
-      {/* <Buttons /> */}
+    <>
       <Nav />
-      {/* <Products /> */}
-      {/* <Recommended /> */}
-      {/* <Sidebar /> */}
-      {/* <Categories /> */}
-      {/* <Colors /> */}
-      {/* <Price /> */}
-    </div>
+      <Products />
+    </>
   );
 }
 
