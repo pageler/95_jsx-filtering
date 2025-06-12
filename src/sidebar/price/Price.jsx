@@ -3,11 +3,7 @@ import "./Price.css";
 import React from "react";
 
 function Price() {
-  return (
-    <div>
-      <h1>Price.jsx</h1>
-    </div>
-  );
+  return <div>Price</div>;
 }
 
 export default Price;

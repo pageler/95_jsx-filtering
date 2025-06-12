@@ -15,7 +15,7 @@ a {
   padding: 10px 20px;
   margin-right: 6px;
   background: transparent;
-  border: 0.6px solid #535353;
+  border: 0.6px solid rgb(97, 97, 97);
   border-radius: 5px;
   color: #323232;
   cursor: pointer;

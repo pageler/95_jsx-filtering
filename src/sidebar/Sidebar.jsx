@@ -1,12 +1,26 @@
 import "./Sidebar.css";
 
-import React from "react";
+import { FaShoppingCart } from "react-icons/fa";
+
+import Categories from "./categories/Categories";
+import Colors from "./colors/Colors";
+import Price from "./price/Price";
 
 function Sidebar() {
   return (
-    <div>
-      <h1>Sidebar.jsx</h1>
-    </div>
+    <>
+      <section className="sidebar">
+        <div className="logo-container">
+          <h1>
+            <FaShoppingCart />
+          </h1>
+        </div>
+
+        <Categories />
+        <Price />
+        <Colors />
+      </section>
+    </>
   );
 }
 
