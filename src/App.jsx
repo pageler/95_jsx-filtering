@@ -10,8 +10,8 @@ function App() {
     <>
       <Nav />
       <Sidebar />
-      <Products />
       <Recommended />
+      <Products />
     </>
   );
 }
