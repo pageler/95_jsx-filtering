@@ -8,8 +8,8 @@ import Sidebar from "./sidebar/Sidebar";
 function App() {
   return (
     <>
-      <Nav />
       <Sidebar />
+      <Nav />
       <Recommended />
       <Products />
     </>
