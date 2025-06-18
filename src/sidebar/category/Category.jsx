@@ -2,7 +2,7 @@ import "./Category.css";
 
 import Input from "../../assets/components/Input";
 
-function Category() {
+function Category({ changeHandler }) {
   return (
     <>
       <div>
@@ -10,7 +10,35 @@ function Category() {
       </div>
 
       <div className="sidebar-items">
-        <Input />
+        <label className="sidebar-label-container">
+          <input type="radio" value="" name="test" onChange={changeHandler} />
+          <span className="checkmark"></span> All
+        </label>
+
+        <Input
+          value="sneakers"
+          title="Sneakers"
+          name="test"
+          onChange={changeHandler}
+        />
+        <Input
+          value="flats"
+          title="Flats"
+          name="test"
+          onChange={changeHandler}
+        />
+        <Input
+          value="sandals"
+          title="Sandals"
+          name="test"
+          onChange={changeHandler}
+        />
+        <Input
+          value="heels"
+          title="Heels"
+          name="test"
+          onChange={changeHandler}
+        />
       </div>
     </>
   );
