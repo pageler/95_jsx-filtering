@@ -2,6 +2,10 @@
   margin-top: 20px;
 }
 
+.ml {
+  margin-left: 20px;
+}
+
 .all {
   background: linear-gradient(blue, crimson);
 }
