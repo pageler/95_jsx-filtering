@@ -26,18 +26,17 @@ function App() {
   );
 
   // Radio button search section:
-
   const changeHandler = (e) => {
     setSelectedCategory(e.target.value);
   };
 
-  // Button filter:
+  // Button filtering:
   const clickHandler = (e) => {
     setSelectedCategory(e.target.value);
   };
 
   // Data filtering function:
-  function FilteredData(products, selected, query) {
+  function filteredData(products, selected, query) {
     let filteredProducts = products;
 
     // Filtering Input items:
@@ -72,7 +71,7 @@ function App() {
     );
   }
 
-  const result = FilteredData(products, selectedCategory, query);
+  const result = filteredData(products, selectedCategory, query);
 
   return (
     <>
