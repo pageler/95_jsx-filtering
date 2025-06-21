@@ -1,13 +1,13 @@
-import "./App.css";
+import './App.css';
 
-import { useState } from "react";
+import { useState } from 'react';
 
-import Card from "./assets/components/Card";
-import products from "./assets/db/data.jsx";
-import Nav from "./navigation/Nav";
-import Products from "./products/Products";
-import Recommended from "./recommended/Recommended";
-import Sidebar from "./sidebar/Sidebar";
+import Card from './assets/components/Card';
+import products from './assets/db/data.jsx';
+import Nav from './navigation/Nav';
+import Products from './products/Products';
+import Recommended from './recommended/Recommended';
+import Sidebar from './sidebar/Sidebar';
 
 function App() {
   // All state is applied to the App.jsx and sent out using props:

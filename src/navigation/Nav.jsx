@@ -1,16 +1,21 @@
-import "./Nav.css";
+import './Nav.css';
 
-import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
-import { FiHeart } from "react-icons/fi";
+import {
+  AiOutlineShoppingCart,
+  AiOutlineUserAdd,
+} from 'react-icons/ai';
+import { FiHeart } from 'react-icons/fi';
 
-function Nav() {
+function Nav({ inputChangeHandler, query }) {
   return (
     <nav>
       <div className="nav-container">
         <input
           type="text"
           className="search-input"
+          value={query}
           placeholder="Enter your shoe search."
+          onChange={inputChangeHandler}
         />
       </div>
 
