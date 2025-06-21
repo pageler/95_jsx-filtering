@@ -1,7 +1,11 @@
-import React from "react";
-
-function Buttons() {
-  return <div>Buttons.jsx</div>;
+function Buttons({ onClickHandler, value, title }) {
+  return (
+    <>
+      <button className="btns" value={value} onClick={onClickHandler}>
+        {title}
+      </button>
+    </>
+  );
 }
 
 export default Buttons;

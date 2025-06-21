@@ -1,16 +1,26 @@
-import "./Recommended.css";
+import './Recommended.css';
 
-function Recommended() {
+import Buttons from '../assets/components/Buttons';
+
+function Recommended({ clickHandler }) {
   return (
     <>
       <div>
         <h2 className="recommended-title">Recommended</h2>
         <div className="recommended-flex">
-          <button className="btns">All</button>
-          <button className="btns">Nike</button>
-          <button className="btns">Adidas</button>
-          <button className="btns">Puma</button>
-          <button className="btns">Vans</button>
+          <Buttons
+            value=""
+            title="All Products"
+            onClickHandler={clickHandler}
+          />
+          <Buttons value="Nike" title="Nike" onClickHandler={clickHandler} />
+          <Buttons
+            value="Adidas"
+            title="Adidas"
+            onClickHandler={clickHandler}
+          />
+          <Buttons value="Puma" title="Puma" onClickHandler={clickHandler} />
+          <Buttons value="Vans" title="Vans" onClickHandler={clickHandler} />
         </div>
       </div>
     </>
